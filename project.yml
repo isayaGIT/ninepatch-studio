@@ -1,0 +1,23 @@
+name: NinePatchStudio
+options:
+  bundleIdPrefix: com.mlbb.crossproject
+  deploymentTarget:
+    macOS: '14.0'
+targets:
+  NinePatchStudio:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/NinePatchStudio
+      - path: Resources/DefaultCatBubbleFrames
+        buildPhase: resources
+        type: folder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mlbb.crossproject.NinePatchStudio
+        PRODUCT_NAME: NinePatch Studio
+        SWIFT_VERSION: '5.0'
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+        INFOPLIST_KEY_NSHighResolutionCapable: YES
+        CODE_SIGNING_ALLOWED: NO
