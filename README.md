@@ -1,5 +1,8 @@
 # NinePatch Studio
 
+![NinePatch Studio screenshot](screenshot1.png)
+
+
 A native macOS GIF-first editor for animated chat-bubble decorations.
 
 ## Run
